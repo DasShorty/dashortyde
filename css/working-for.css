@@ -1,0 +1,62 @@
+
+.working {
+    display: flex;
+    flex-direction: row;
+}
+
+.working-for p {
+    transform: rotate(270deg);
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #3b3b3b;
+    font-weight: bolder;
+}
+
+.working-for {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: auto;
+    margin-left: -9rem;
+}
+
+.people {
+    margin-left: -10.5rem;
+    z-index: 1;
+}
+
+.person {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    opacity: 0.3;
+    transition: 1s;
+}
+
+.person:hover {
+    opacity: 1;
+    transform: translateX(3%);
+}
+
+.person:hover .person-text {
+    opacity: 1;
+}
+
+.person-text {
+    opacity: 0;
+    margin-left: 0.3rem;
+    border-radius: 3rem;
+    background-color: #1a1a1a;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.person img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+}
