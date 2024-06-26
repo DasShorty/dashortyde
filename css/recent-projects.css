@@ -2,6 +2,11 @@
 .projects {
     display: flex;
     flex-direction: row-reverse;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .recent-projects p {
@@ -10,6 +15,8 @@
     font-size: 3rem;
     color: #3b3b3b;
     font-weight: bolder;
+    overflow: clip;
+    margin-right: -12rem;
 }
 
 .recent-projects {
@@ -18,11 +25,10 @@
     flex-direction: column;
     justify-content: center;
     flex-wrap: nowrap;
-    margin-right: -12rem;
 }
 
 .project-list {
-    margin-left: -10.5rem;
+    margin-right: -14rem;
     z-index: 1;
 }
 
@@ -46,8 +52,9 @@
 }
 
 .project-text {
+    cursor: default;
     opacity: 0;
-    margin-left: 0.3rem;
+    margin-right: 0.3rem;
     border-radius: 3rem;
     background-color: #1a1a1a;
     padding-left: 1rem;

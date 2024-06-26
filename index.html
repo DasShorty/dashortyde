@@ -2,10 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>DasShortyDE</title>
+    <title>DasShorty</title>
     <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/working-for.css">
     <link rel="stylesheet" href="css/recent-projects.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="js/index.js"></script>
+    <script src="js/footer.js"></script>
 </head>
 <body>
 <main>
@@ -15,7 +19,7 @@
         </div>
         <div class="people">
             <div class="person">
-                <a href="https://twitch.tv/laudytv">
+                <a href="https://twitch.tv/laudytv" target="_blank">
                     <img src="assets/laudytv.jpg" alt="LaudyTV">
                 </a>
                 <div class="person-text">
@@ -23,7 +27,7 @@
                 </div>
             </div>
             <div class="person">
-                <a href="https://twitch.tv/alterrativ">
+                <a href="https://twitch.tv/alterrativ" target="_blank">
                     <img src="assets/alterrativ.jpg" alt="Alterrativ">
                 </a>
                 <div class="person-text">
@@ -31,7 +35,7 @@
                 </div>
             </div>
             <div class="person">
-                <a href="https://twitter.com/NurKai_">
+                <a href="https://twitter.com/NurKai_" target="_blank">
                     <img src="assets/nurkai.jpg" alt="NurKai">
                 </a>
                 <div class="person-text">
@@ -42,26 +46,88 @@
     </div>
 
     <div class="centered-box">
-        <img src="assets/logo.jpg" alt="Logo">
-        <h1>DasShorty</h1>
+        <img class="profile-img" src="assets/logo.jpg" alt="Logo">
+        <h1>Anthony</h1>
+        <span>aka. DasShorty / Shorty</span>
         <h2>FullStack Developer from Goerlitz, Saxony</h2>
-    </div>
 
-    <div class="projects">
-        <div class="recent-projects">
-            <p>recent-projects</p>
-        </div>
-        <div class="project-list">
-            <div class="project-view">
-                <a href="https://twitch.tv/laudytv">
-                    <img src="assets/laudytv.jpg" alt="LaudyTV">
-                </a>
-                <div class="project-text">
-                    <p>as Dev for Stream overlays, Websites and Discord Bots</p>
+        <div id="languages">
+            <div class="experience-in-lang">
+                <div class="lang-text">
+                    <img src="assets/java.svg" alt="Java">
+                    <p id="experience-java"></p>
+                </div>
+                <div class="loading-bar-content">
+                    <div class="loading-bar">
+                        <div id="java-bar">
+                            <div class="inner-bar"></div>
+                        </div>
+                    </div>
+                    <p>/ 10</p>
+                </div>
+            </div>
+            <div class="experience-in-lang">
+                <div class="lang-text">
+                    <img src="assets/javascript.svg" alt="JavaScript">
+                    <p id="experience-javascript"></p>
+                </div>
+                <div class="loading-bar-content">
+                    <div class="loading-bar">
+                        <div id="javascript-bar">
+                            <div class="inner-bar"></div>
+                        </div>
+                    </div>
+                    <p>/ 10</p>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="projects">
+        <div class="recent-projects">
+            <p>recent projects</p>
+        </div>
+        <div class="project-list">
+            <div class="project-view">
+                <a href="https://laudymedia.de" target="_blank">
+                    <img src="assets/teebot.png" alt="Teebot">
+                </a>
+                <div class="project-text">
+                    <p>Discord Bot for LaudyTV</p>
+                </div>
+            </div>
+            <div class="project-view">
+                <a href="https://shry.site/discord" target="_blank">
+                    <img src="assets/special-events.png" alt="Special Events">
+                </a>
+                <div class="project-text">
+                    <p>Discord Bot for Community Events</p>
+                </div>
+            </div>
+            <div class="project-view">
+                <a href="https://shry.site/prideparty" target="_blank">
+                    <img src="assets/pridebot.png" alt="Pridebot">
+                </a>
+                <div class="project-text">
+                    <p>Discord Bot for NurKai</p>
+                </div>
+            </div>
+            <div class="project-view">
+                <a href="https://dasshorty.de" target="_blank">
+                    <img src="assets/logo.jpg" alt="Portfolio">
+                </a>
+                <div class="project-text">
+                    <p>Portfolio for myself</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p id="footer-year"></p>
+        <p class="footer-spacer">|</p>
+        <a href="imprint.html" target="_blank">Imprint</a>
+    </footer>
 
 
 </main>

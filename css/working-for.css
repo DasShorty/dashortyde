@@ -2,6 +2,11 @@
 .working {
     display: flex;
     flex-direction: row;
+    position: fixed;
+    left: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .working-for p {
@@ -19,7 +24,7 @@
     justify-content: center;
     flex-wrap: nowrap;
     width: auto;
-    margin-left: -9rem;
+    margin-left: -8.5rem;
 }
 
 .people {
@@ -47,6 +52,7 @@
 }
 
 .person-text {
+    cursor: default;
     opacity: 0;
     margin-left: 0.3rem;
     border-radius: 3rem;
