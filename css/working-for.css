@@ -25,7 +25,7 @@
     flex-wrap: nowrap;
     width: auto;
     margin-left: -8.5rem;
-}
+} 
 
 .people {
     margin-left: -10.5rem;
@@ -40,6 +40,10 @@
     margin-bottom: 0.3rem;
     opacity: 0.3;
     transition: 1s;
+}
+
+.ex-working {
+    border: 2px solid red;
 }
 
 .person:hover {
@@ -62,7 +66,29 @@
 }
 
 .person img {
-    width: 4rem;
-    height: 4rem;
-    border-radius: 2rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 10rem;
+    animation: loadLeft 2s ease-in-out;
+    animation-duration: 2s;
+}
+
+@keyframes loadLeft {
+    0% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.img-text p {
+    margin-top: -1rem;
+    text-align: center;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.person:hover .img-text p {
+    opacity: 0.8;
 }
